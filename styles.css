@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Kode+Mono&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Kode Mono", monospace;
+}
+
+body{
+    height: 100vh;
+    background-image: url("./asserts/backgrounImage.jpg");
+    background-attachment: fixed;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container{
+    color: white;
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+}
+
+#title{
+    margin-bottom:5%; 
+    font-size: 40px;
+}
+
+.timer{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.time{
+    margin: 10px;
+    padding: 10px;
+    font-size: 20px;
+}
+
+.display{
+    width: 100px;
+    padding: 10px;
+    background: rgba(255, 255, 255, 0.2);
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.info{
+    background-color: rgb(48, 45, 45);
+    color: white;
+    width:100px;
+    padding: 5px;
+    border-bottom-left-radius: 16px;
+    border-bottom-right-radius: 16px;
+}
+
+@media only screen and (max-width: 714px) {
+  .timer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+
+  #title{
+    margin: 10% 0 0 0;
+  }
+}
